@@ -5,8 +5,8 @@ interface UseFetchProps {
   url: string;
 }
 
-export default function useFetch({url}: UseFetchProps) {
-  const [response, setResponse] = useState([]);
+export default function useFetch<T>({url}: UseFetchProps) {
+  const [response, setResponse] = useState<T[]>([]);
   const [loading, setLoading] = useState(false);
 
   const clear = () => setResponse([]);
