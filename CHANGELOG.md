@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ezranbayantemur/typescript-reactnative-practice/compare/v0.0.2...v0.0.3) (2021-03-22)
+
+
+### Bug Fixes
+
+* App bugs fixed ([3bc2b30](https://github.com/ezranbayantemur/typescript-reactnative-practice/commit/3bc2b30e4b208513429cea3352300e73b266c6f0))
+
 ### 0.0.2 (2021-03-22)
 
 
