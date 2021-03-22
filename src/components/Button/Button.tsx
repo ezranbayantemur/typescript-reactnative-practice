@@ -27,7 +27,7 @@ const Button: FC<ButtonProps> = ({
       style={styles[type].container}
       {...otherProps}>
       {loading ? (
-        <ActivityIndicator size="large" testID="button-indicator" />
+        <ActivityIndicator testID="button-indicator" />
       ) : (
         <Text testID="button-text" style={styles[type].title}>
           {title}
