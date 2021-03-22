@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "release": "standard-version",
+    "clean": "cd android && ./gradlew clean && cd .. && cd ios && xcodebuild clean && cd .."
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -29,6 +31,7 @@
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1",
+    "standard-version": "^9.1.1",
     "typescript": "^3.8.3"
   },
   "resolutions": {

@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import {SafeAreaView} from 'react-native';
-import Button from './components/Button';
+import RandomUsers from './containers/RandomUsers';
 
 const App: FC = () => {
   return (
-    <SafeAreaView>
-      <Button title="Hello" />
+    // eslint-disable-next-line react-native/no-inline-styles
+    <SafeAreaView style={{flex: 1}}>
+      <RandomUsers />
     </SafeAreaView>
   );
 };
