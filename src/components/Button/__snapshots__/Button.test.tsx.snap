@@ -13,12 +13,24 @@ exports[`should render correctly 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignItems": "center",
+      "backgroundColor": "#8e24aa",
+      "borderRadius": 5,
+      "justifyContent": "center",
+      "margin": 10,
       "opacity": 1,
+      "padding": 10,
     }
   }
   testID="button-touchable"
 >
   <Text
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 15,
+      }
+    }
     testID="button-text"
   >
     

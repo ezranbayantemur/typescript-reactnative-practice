@@ -1,6 +1,8 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import Button from '.';
+import {ButtonTypes} from './Button';
+import styles from './Button.style';
 
 test('should render correctly', () => {
   const comp = render(<Button title="" />);
@@ -34,4 +36,12 @@ test('should not trigger press event on loading state', () => {
   const buttonTouchable = comp.getByTestId('button-touchable');
   fireEvent(buttonTouchable, 'press');
   expect(mockFunction).not.toBeCalled();
+});
+
+test('should render correct type style ', () => {
+  const selectedButtonType: ButtonTypes = 'primary';
+
+  const comp = render(<Button title="" type={selectedButtonType} />);
+  const buttonStyle = comp.getByTestId('button-touchable').props.style;
+  expect(buttonStyle).toMatchObject(styles[selectedButtonType].container);
 });
